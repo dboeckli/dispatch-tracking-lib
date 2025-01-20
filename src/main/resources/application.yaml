@@ -1,5 +1,5 @@
 spring:
   application:
-    name: spring-6-rest-mvc-api  
+    name: dispatch-tracking-lib
   
   

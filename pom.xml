@@ -9,9 +9,9 @@
     </parent>
 
     <!-- artifacId should be lowercase to be able to push to github packages -->
-    <groupId>ch.dboeckli.guru.springframework</groupId>
-    <artifactId>spring-6-rest-mvc-api </artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <groupId>dev.lydtech</groupId>
+    <artifactId>dispatch-tracking-lib </artifactId>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     
     <name>${project.artifactId}</name>
