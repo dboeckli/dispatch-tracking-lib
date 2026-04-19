@@ -13,7 +13,8 @@ import java.util.UUID;
 @NoArgsConstructor
 public class DispatchCompleted {
 
-    UUID orderId;
-    String dispatchedDate;
-    
+	UUID orderId;
+
+	String dispatchedDate;
+
 }

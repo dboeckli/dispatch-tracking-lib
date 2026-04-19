@@ -13,8 +13,8 @@ import java.util.UUID;
 @NoArgsConstructor
 public class TrackingStatusUpdated {
 
-    UUID orderId;
+	UUID orderId;
 
-    TrackingStatus status;
-    
+	TrackingStatus status;
+
 }

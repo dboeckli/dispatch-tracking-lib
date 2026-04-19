@@ -13,8 +13,8 @@ import java.util.UUID;
 @AllArgsConstructor
 public class OrderCreated {
 
-    UUID orderId;
+	UUID orderId;
 
-    String item;
+	String item;
 
 }
