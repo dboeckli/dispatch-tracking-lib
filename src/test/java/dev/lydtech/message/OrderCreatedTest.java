@@ -9,64 +9,64 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class OrderCreatedTest {
 
-	@Test
-	void testBuilderAndGetters() {
-		UUID orderId = UUID.randomUUID();
-		String item = "Item 1";
+    @Test
+    void testBuilderAndGetters() {
+        UUID orderId = UUID.randomUUID();
+        String item = "Item 1";
 
-		OrderCreated orderCreated = OrderCreated.builder().orderId(orderId).item(item).build();
+        OrderCreated orderCreated = OrderCreated.builder().orderId(orderId).item(item).build();
 
-		assertEquals(orderId, orderCreated.getOrderId());
-		assertEquals(item, orderCreated.getItem());
-	}
+        assertEquals(orderId, orderCreated.getOrderId());
+        assertEquals(item, orderCreated.getItem());
+    }
 
-	@Test
-	void testAllArgsConstructor() {
-		UUID orderId = UUID.randomUUID();
-		String item = "Item 1";
+    @Test
+    void testAllArgsConstructor() {
+        UUID orderId = UUID.randomUUID();
+        String item = "Item 1";
 
-		OrderCreated orderCreated = new OrderCreated(orderId, item);
+        OrderCreated orderCreated = new OrderCreated(orderId, item);
 
-		assertEquals(orderId, orderCreated.getOrderId());
-		assertEquals(item, orderCreated.getItem());
-	}
+        assertEquals(orderId, orderCreated.getOrderId());
+        assertEquals(item, orderCreated.getItem());
+    }
 
-	@Test
-	void testNoArgsConstructorAndSetters() {
-		UUID orderId = UUID.randomUUID();
-		String item = "Item 1";
+    @Test
+    void testNoArgsConstructorAndSetters() {
+        UUID orderId = UUID.randomUUID();
+        String item = "Item 1";
 
-		OrderCreated orderCreated = new OrderCreated();
-		orderCreated.setOrderId(orderId);
-		orderCreated.setItem(item);
+        OrderCreated orderCreated = new OrderCreated();
+        orderCreated.setOrderId(orderId);
+        orderCreated.setItem(item);
 
-		assertEquals(orderId, orderCreated.getOrderId());
-		assertEquals(item, orderCreated.getItem());
-	}
+        assertEquals(orderId, orderCreated.getOrderId());
+        assertEquals(item, orderCreated.getItem());
+    }
 
-	@Test
-	void testEqualsAndHashCode() {
-		UUID orderId = UUID.randomUUID();
-		String item = "Item 1";
+    @Test
+    void testEqualsAndHashCode() {
+        UUID orderId = UUID.randomUUID();
+        String item = "Item 1";
 
-		OrderCreated orderCreated1 = new OrderCreated(orderId, item);
-		OrderCreated orderCreated2 = new OrderCreated(orderId, item);
+        OrderCreated orderCreated1 = new OrderCreated(orderId, item);
+        OrderCreated orderCreated2 = new OrderCreated(orderId, item);
 
-		assertEquals(orderCreated1, orderCreated2);
-		assertEquals(orderCreated1.hashCode(), orderCreated2.hashCode());
-	}
+        assertEquals(orderCreated1, orderCreated2);
+        assertEquals(orderCreated1.hashCode(), orderCreated2.hashCode());
+    }
 
-	@Test
-	void testToString() {
-		UUID orderId = UUID.randomUUID();
-		String item = "Item 1";
+    @Test
+    void testToString() {
+        UUID orderId = UUID.randomUUID();
+        String item = "Item 1";
 
-		OrderCreated orderCreated = new OrderCreated(orderId, item);
+        OrderCreated orderCreated = new OrderCreated(orderId, item);
 
-		String toString = orderCreated.toString();
+        String toString = orderCreated.toString();
 
-		assertTrue(toString.contains(orderId.toString()));
-		assertTrue(toString.contains(item));
-	}
+        assertTrue(toString.contains(orderId.toString()));
+        assertTrue(toString.contains(item));
+    }
 
 }
