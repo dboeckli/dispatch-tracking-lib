@@ -43,7 +43,7 @@
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
 
-    <spring-javaformat-maven-plugin.version>0.0.47</spring-javaformat-maven-plugin.version>
+    <spring-javaformat-maven-plugin.version>0.0.48</spring-javaformat-maven-plugin.version>
     <spotless-maven-plugin.version>3.9.0</spotless-maven-plugin.version>
 
     <!-- Sonar -->
