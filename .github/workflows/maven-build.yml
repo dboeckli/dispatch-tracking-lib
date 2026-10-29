@@ -120,7 +120,7 @@ jobs:
           # Check if required parameters are set
           required_params=("GITHUB_ACTOR" "GITHUB_TOKEN" "BRANCH_MVN_VERSION" "BRANCH_NAME" "DOCKER_USER" "DOCKER_TOKEN")
           for param in "${required_params[@]}"; do
-            if [ -z "${!param}" ]; then
+            if [[ -z "${!param}" ]]; then
               echo "::error::Required parameter $param is not set"
               exit 1
             fi
@@ -180,7 +180,7 @@ jobs:
           # Check if required parameters are set
           required_params=("GITHUB_ACTOR" "GITHUB_TOKEN" "BRANCH_MVN_VERSION" "BRANCH_NAME" "DOCKER_USER" "DOCKER_TOKEN")
           for param in "${required_params[@]}"; do
-            if [ -z "${!param}" ]; then
+            if [[ -z "${!param}" ]]; then
               echo "::error::Required parameter $param is not set"
               exit 1
             fi
@@ -222,7 +222,7 @@ jobs:
           # Check if required parameters are set
           required_params=("SONAR_TOKEN")
           for param in "${required_params[@]}"; do
-            if [ -z "${!param}" ]; then
+            if [[ -z "${!param}" ]]; then
               echo "::error::Required parameter $param is not set"
               exit 1
             fi
